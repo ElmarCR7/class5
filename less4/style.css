@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.block{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: absolute;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear ;
+    animation-direction: alternate;
+    animation-delay: 1.5s ;
+    /* animation-fill-mode: both; */
+}
+.block:hover{background-color: red;
+    cursor: pointer;
+    transition: .5s;
+    animation-play-state: paused;
+}
+.block:active{
+    background-color: green;
+    transition: 0s;
+}
+@keyframes anime{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0;
+        left: 50%;
+    }
+    75%{
+        top: 100%;
+        left: 50%;
+    }
+    100%{
+        top: 100%;
+        left: 0;
+        /* transform: rotateX(-360deg); */
+    }
+}
+
+
+
+
+/* .box{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    position: absolute;
+    top: 75px;
+    left: 60vh;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    top: 30px;
+    left: 15px;
+    border-radius: 50%;
+}
+.circle2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+
+    left: 190px;
+    top: 30px;
+    border-radius: 50%;
+
+}
+.рот{
+    height: 75px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    top: 40%;
+    left: 15%;
+    border-radius: 0 0 45% 45%;
+    transform: translate(-50%, 0);
+} */
+
+/* .block{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    margin: 5px;
+    
+
+}
+
+.relative{
+   background-color: red;
+   position: relative;
+   top: 50px;
+   left: 200px;
+
+}
+
+.absolute{
+    background-color: green;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    
+}
+.fixed{
+    background-color: blue;
+    position: fixed;
+    left: 400px;
+    top: 20px;
+}
+.sticky{
+   background-color: purple;
+   position: sticky;
+   left: 200px;
+   top: 50px;
+   bottom: 100px;
+
+}
+
+.box{
+    width: 800px;
+    height: 80vh;
+    margin: 100px auto;
+    border: 10px solid red;
+    position: relative;
+    overflow: auto;
+} */
